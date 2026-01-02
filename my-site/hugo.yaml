@@ -17,6 +17,8 @@ menu:
         type: search
 
 params:
+  footer:
+    displayCopyright: true
   theme:
     # light | dark | system
     default: light
@@ -26,7 +28,15 @@ params:
   dateFormat: "January 2, 2006"
   page:
     # full (100%), wide (90rem), normal (1280px)
-    width: full
+    width: wide
+  # Search
+  search:
+    enable: true
+    type: flexsearch
+
+    flexsearch:
+      # index page by: content | summary | heading | title
+      index: content
 
 # Parse Git commit
 enableGitInfo: true
