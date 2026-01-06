@@ -19,6 +19,17 @@ menu:
       params:
         type: search
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      passthrough:
+        delimiters:
+          block: [['\[', '\]'], ["$$", "$$"]]
+          inline: [['\(', '\)']]
+        enable: true
+
 params:
   footer:
     displayCopyright: true

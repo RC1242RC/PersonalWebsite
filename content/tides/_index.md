@@ -15,5 +15,5 @@ If you are curious about tides, and find the common tidal explanations to be uns
 
 {{< cards >}}
   {{< card link="./tidal_confusion" title="1. Why are tides so confusing?" >}}
-  {{< card link="./Forces" title="2. Forces" >}}
+  {{< card link="./forces" title="2. Forces" >}}
 {{< /cards >}}
