@@ -33,7 +33,7 @@ If you are curious about tides, and find the common tidal explanations to be uns
   <meta itemprop="description" content="Photo by Trevor Vannoy on Unsplash. Most people know two things about tides; they come in and out twice a day, and they have something to do with the moon.
 But how do tides actually work? This question turns out to have a complicated answer, and one which is both badly explained and poorly understood.
 If you are curious about tides, and find the common tidal explanations to be unsatisfying and confusing (like myself), then I hope that the following pages will provide you with clarity and understanding.">
-  <meta itemprop="dateModified" content="2026-01-05T08:33:41+00:00">
+  <meta itemprop="dateModified" content="2026-01-06T10:11:04+00:00">
   <meta itemprop="wordCount" content="96">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="How do tides work?">
@@ -45,34 +45,7 @@ If you are curious about tides, and find the common tidal explanations to be uns
     <link href="/css/custom.css" rel="stylesheet" />
 
   
-
-
-  <script>
-    
-
-    function setTheme(theme) {
-      document.documentElement.classList.remove("light", "dark");
-
-      if (theme !== "light" && theme !== "dark") {
-       theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-      }
-
-      document.documentElement.classList.add(theme);
-      document.documentElement.style.colorScheme = theme;
-    }
-
-    setTheme("color-theme" in localStorage ? localStorage.getItem("color-theme") : 'light')
-
-  </script>
-
-  <script>
-    
-
-    if (localStorage.getItem('banner-closed')) {
-      document.documentElement.style.setProperty("--hextra-banner-height", "0px");
-      document.documentElement.classList.add("hextra-banner-hidden");
-    }
-  </script>
+<script src="/js/main-head.js" integrity=""></script>
 
   
   
@@ -92,7 +65,7 @@ If you are curious about tides, and find the common tidal explanations to be uns
   title=""
   href="/tides"
   
-  class="hx:text-sm hx:contrast-more:text-gray-700 hx:contrast-more:dark:text-gray-100 hx:relative hx:-ml-2 hx:hidden hx:whitespace-nowrap hx:p-2 hx:md:inline-flex hx:items-center hx:gap-1 hx:text-gray-600 hx:hover:text-gray-800 hx:dark:text-gray-400 hx:dark:hover:text-gray-200"
+  class="hx:text-sm hx:contrast-more:text-gray-700 hx:contrast-more:dark:text-gray-100 hx:relative hx:-ml-2 hx:hidden hx:whitespace-nowrap hx:p-2 hx:md:inline-flex hx:items-center hx:gap-1 hx:font-medium"
 ><span class="hx:text-center">How do tides work?</span>
 </a><a
   title=""
@@ -129,9 +102,8 @@ If you are curious about tides, and find the common tidal explanations to be uns
 
   <div class='hx:mx-auto hx:flex hextra-max-page-width'>
     <aside class="hextra-sidebar-container hx:flex hx:flex-col hx:print:hidden hx:md:top-16 hx:md:shrink-0 hx:md:w-64 hx:md:self-start hx:max-md:[transform:translate3d(0,-100%,0)] hx:md:sticky">
-  
-  <div class="hx:px-4 hx:pt-4 hx:md:hidden">
-    <div class="hextra-search-wrapper hx:relative hx:md:w-64">
+    <div class="hx:px-4 hx:pt-4 hx:md:hidden">
+      <div class="hextra-search-wrapper hx:relative hx:md:w-64">
   <div class="hx:relative hx:flex hx:items-center hx:text-gray-900 hx:contrast-more:text-gray-800 hx:dark:text-gray-300 hx:contrast-more:dark:text-gray-300">
     <input
       placeholder="Search..."
@@ -155,11 +127,17 @@ If you are curious about tides, and find the common tidal explanations to be uns
   </div>
 </div>
 
-  </div>
-  <div class="hextra-scrollbar hx:overflow-y-auto hx:overflow-x-hidden hx:p-4 hx:grow hx:md:h-[calc(100vh-var(--navbar-height)-var(--menu-height))]">
+    </div><div class="hextra-scrollbar hx:overflow-y-auto hx:overflow-x-hidden hx:p-4 hx:grow hx:md:h-[calc(100vh-var(--navbar-height)-var(--menu-height))]">
     <ul class="hx:flex hx:flex-col hx:gap-1 hx:md:hidden">
       
       
+          <li class=""><a
+    class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+    href="/beans/"
+    
+  >Beans
+    </a></li>
           <li class=""><a
     class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
@@ -233,10 +211,15 @@ If you are curious about tides, and find the common tidal explanations to be uns
 
 
     <article class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8 hx:pr-[calc(env(safe-area-inset-right)-1.5rem)]">
-      <main class="hx:w-full hx:min-w-0 hx:max-w-6xl hx:px-6 hx:pt-4 hx:md:px-12">
+      <main class="hx:w-full hx:min-w-0 hextra-max-content-width hx:px-6 hx:pt-4 hx:md:px-12">
         
         <div class="content">
-          <h1>How do tides work?</h1>
+          
+          <div class="hx:flex hx:flex-col hx:sm:flex-row hx:items-start hx:sm:items-center hx:sm:justify-between hx:gap-4 hx:mb-4">
+            <h1 class="hx:mb-0">How do tides work?</h1>
+            
+          </div>
+          
           <p><figure>
     <img src="/images/tides-index.jpg" title="Photo by Trevor Vannoy on Unsplash." alt=""  loading="lazy" />
     <figcaption>Photo by Trevor Vannoy on Unsplash.</figcaption>
@@ -247,18 +230,19 @@ If you are curious about tides, and find the common tidal explanations to be uns
 <div class="hextra-cards hx:mt-4 hx:gap-4 hx:grid not-prose" style="--hextra-cards-grid-cols: 3;">
   <a
     class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"href="./tidal_confusion"
-      ><span class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:p-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50">1. Why are tides so confusing?</span></a>
+      ><div class="hx:mt-auto">
+      <span class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:p-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50">1. Why are tides so confusing?</span></div></a>
   <a
     class="hextra-card hx:group hx:flex hx:flex-col hx:justify-start hx:overflow-hidden hx:rounded-lg hx:border hx:border-gray-200 hx:text-current hx:no-underline hx:dark:shadow-none hx:hover:shadow-gray-100 hx:dark:hover:shadow-none hx:shadow-gray-100 hx:active:shadow-sm hx:active:shadow-gray-200 hx:transition-all hx:duration-200 hx:hover:border-gray-300 hx:bg-transparent hx:shadow-xs hx:dark:border-neutral-800 hx:hover:bg-slate-50 hx:hover:shadow-md hx:dark:hover:border-neutral-700 hx:dark:hover:bg-neutral-900"href="./forces"
-      ><span class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:p-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50">2. Forces</span></a>
+      ><div class="hx:mt-auto">
+      <span class="hextra-card-icon hx:flex hx:font-semibold hx:items-start hx:gap-2 hx:p-4 hx:text-gray-700 hx:hover:text-gray-900 hx:dark:text-neutral-200 hx:dark:hover:text-neutral-50">2. Forces</span></div></a>
 </div>
 
 
         </div>
         
-    <div class="hx:mt-12 hx:mb-8 hx:block hx:text-xs hx:text-gray-500 hx:ltr:text-right hx:rtl:text-left hx:dark:text-gray-400">Last updated on <time datetime="2026-01-05T08:33:41.000Z">January 5, 2026</time></div>
-        
-        
+    <div class="hx:mt-12 hx:mb-8 hx:block hx:text-xs hx:text-gray-500 hx:ltr:text-right hx:rtl:text-left hx:dark:text-gray-400">
+      Last updated on <time datetime="2026-01-06T10:11:04.000Z">January 6, 2026</time></div>
       </main>
     </article>
   </div>
