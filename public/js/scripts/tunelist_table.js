@@ -24,6 +24,13 @@ let tunelist_table = new DataTable("#tunelist_table", {
     //        targets: [secret_account_col]
     //    }
     //lengthMenu: [25, 50, 100, -1],
+    scrollX: true,
+    columnDefs: [
+        {
+            targets: [3, 6, 7],
+            visible: false
+        },
+    ],
     select: {
         style: 'single',
         toggleable: false
@@ -31,12 +38,20 @@ let tunelist_table = new DataTable("#tunelist_table", {
     layout: {
         top1: {
             searchPanes: {
-                cascadePanes: true,
+                cascadePanes: false,
+                viewTotal: true,
+                layout: "columns-4",
                 threshold: 1,
-                order: ["Type", "Key"],
+                order: ["Type", "Time", "Key", "Composer"],
                 controls: false,
                 collapse: false,
                 clear: true,
+                dtOpts: {
+                    scrollY: '100px',
+                    select: {
+                        style: "multi"
+                    }
+                }
             }
         }
     }
@@ -50,8 +65,17 @@ tunelist_table.on('select', function (e, dt, type, index) {
             .data();
         
         var abc_note_string = data[7].split('\\n').join('\n');
-        var abc_total_string = `X:1\nT:${data[4]}\nC:${data[5]}\nM:${data[1]}\nR:${data[0]}\nL:${data[2]}\nS:${data[6]}\nK:${data[3]}\n${abc_note_string}`;
+        var abc_total_string = `X:1\nT:${data[0]}\nC:${data[5]}\nM:${data[2]}\nR:${data[1]}\nL:${data[3]}\nS:${data[6]}\nK:${data[4]}\n${abc_note_string}`;
  
-        ABCJS.renderAbc("paper1", abc_total_string)
+        ABCJS.renderAbc(
+            "paper1", 
+            abc_total_string,
+            {
+                selectionColor: "ff0000",
+                responsive: "resize"
+            })
     }
 });
+
+// Preselect tune
+tunelist_table.row(0).select();
