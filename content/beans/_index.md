@@ -1,6 +1,11 @@
 ---
 title: 'Beans'
 breadcrumbs: false
+draft: true
 ---
 
-{{% include_html file="/static/data/test_table.html"  %}}
+{{% css_imports  %}}
+
+{{% include_html file="/static/data/pd_test.html"  %}}
+
+{{% js_imports  %}}

@@ -1,3 +1,5 @@
+/* FONTS AND THEMING */
+
 @font-face {
   font-family: 'Instrument Serif';
   src: url('/fonts/instrument-serif-v5-latin-regular.woff2') format('woff2'); 
@@ -11,4 +13,18 @@
   :root {
     --hx-default-font-family: 'Spectral';
   }
+}
+
+/* OVERRIDDING MAIN.CSS IN HEXTRA/CSS/COMPILED */
+
+.content :where(table):not(:where(.hextra-code-block table, [class~="not-prose"], [class~="not-prose"] *)) {
+  display: revert;                                 /* This is overridden to make the Datatables take up the whole div width */
+}
+
+.content :where(table):not(:where(.hextra-code-block table, [class~="not-prose"], [class~="not-prose"] *)) td {
+  border-width: 0px;                              /* This is overridden because it was clashing with Datatables borders */
+}
+
+.content :where(table):not(:where(.hextra-code-block table, [class~="not-prose"], [class~="not-prose"] *)) tr {
+  border-top-width: 0px;                          /* This is overridden because it was clashing with Datatables borders */
 }
