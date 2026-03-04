@@ -67,7 +67,6 @@ tunelist_table.on('select', function (e, dt, type, index) {
         var abc_note_string = data[7].split('\\n').join('\n')
                                      .split('&gt;').join('\>')
                                      .split('&lt;').join('\>');
-        console.log(abc_note_string)
         var abc_total_string = `X:1\nT:${data[0]}\nC:${data[5]}\nM:${data[2]}\nR:${data[1]}\nL:${data[3]}\nS:${data[6]}\nK:${data[4]}\n${abc_note_string}`;
  
         ABCJS.renderAbc(

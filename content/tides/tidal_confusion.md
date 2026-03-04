@@ -15,6 +15,9 @@ Most of these explanations are, at best, misleading, and at worst, factually wro
 
 Imagine a situation where the Earth is a perfect sphere and is very far away from anything else. This Earth is motionless, except that it spins once per day. Imagine that the planet is completely encased in water, which is held against the surface by the Earth's gravity. The water does not spin with the Earth; it is completely stationary, while the Earth spins inside it. In this case, the depth of the water will be the same everywhere, and there will be no tides.
 
+![](/gifs/test1.gif)
+![](/gifs/test2.gif)
+![](/gifs/1-1_EarthByItself_V2.gif 'The Earth spinning inside stationary water.')
 ![](/gifs/1-1_EarthByItself_V2.gif 'The Earth spinning inside stationary water.')
 
 Now imagine that the Moon is slowly traveling around the Earth, completing about one orbit each month. Like the Earth, the Moon has a gravitational field which attracts the water. The water closest to the Moon is affected the most, and is pulled towards the Moon so that it forms a bulge. As each point on the Earth's surface rotates through the bulge, the water level at that point rises and falls. This results in high and low tides.
